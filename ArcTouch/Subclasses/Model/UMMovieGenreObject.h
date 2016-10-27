@@ -10,6 +10,10 @@
 
 @interface UMMovieGenreObject : NSObject
 
+/*
+    Creates an array of UMMovieGenreObjects from an array of genreIds for a movie, so it can
+    have dot access properties instead of an array of dictionaries
+ */
 + (NSArray *)createArrayOfGenresFromGenresIds:(NSArray *)genresIdsArray;
 
 @property (assign, nonatomic) NSInteger genreId;

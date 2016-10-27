@@ -23,6 +23,9 @@ static NSString * const kUMGenreNameKey = @"name";
     return genresArray;
 }
 
+/*
+    Private initialization method of a UMMovieGenreObject
+ */
 - (instancetype)initWithGenreInfo:(NSDictionary *)genreInfo {
     self = [super init];
     if (self) {

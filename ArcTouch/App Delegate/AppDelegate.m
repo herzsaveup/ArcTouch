@@ -18,11 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /*
+        Manual creation of the window since we are not using Storyboards
+     */
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[UMMoviesListViewController hr_loadViewControllerFromNib]];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
