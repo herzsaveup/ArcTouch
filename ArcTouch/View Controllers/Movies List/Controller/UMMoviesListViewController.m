@@ -33,8 +33,13 @@
     self.navigationItem.title = @"Upcoming Movies";
     
     [SVProgressHUD showWithStatus:@"Getting movies list"];
-    
     [self.tableView registerNib:[UMMovieListCell hr_nibForView] forCellReuseIdentifier:[UMMovieListCell hr_reuseIdentifier]];
+    
+    /*
+        First we request the list of genres that are going to match the ones in the movies list to have accurate info to display,
+        and since we don't cate about the response (successful or not), we call the +getUpcomingMoviesListWithCompletionHandler:
+        just after that and convert the JSON object into our own Data Model and display it.
+     */
     
     [UMRequestsManager getMoviesGenresListWithCompletionHandler:^(id responseObject, NSError *error) {
         [UMMovieGenresManager serializeMovieGenres:responseObject[@"genres"]];
@@ -54,13 +59,14 @@
             }
         }];
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// Methods to adjust the tableView's scrollView contentInset when the keyboard is displayed for the searchBar
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -83,7 +89,6 @@
     [self.tableView setContentInset:UIEdgeInsetsMake(0.0, 0.0, kbRect.size.height, 0.0)];
     [self.tableView setScrollIndicatorInsets:UIEdgeInsetsMake(0.0, 0.0, kbRect.size.height, 0.0)];
     [self.view layoutIfNeeded];
-    
 }
 
 - (void)keyboardWillHide:(NSNotification *)notification {
@@ -94,6 +99,8 @@
 }
 
 #pragma mark - Getters
+
+// Custom getter to determine what dataSource use for the tableView depending if it's in search mode or not
 
 - (NSArray *)moviesListArray {
     return _isSearching ? _filteredMoviesListArray : _moviesListArray;

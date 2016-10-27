@@ -9,6 +9,8 @@
 #import "UMMovieListCell.h"
 #import "UMMovieObject.h"
 
+static CGFloat const kUMMovieListCellHeight = 200.0;
+
 @interface UMMovieListCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *moviePosterImageView;
@@ -30,16 +32,10 @@
     self.preservesSuperviewLayoutMargins = NO;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 #pragma mark - Public Methods
 
 + (CGFloat)height {
-    return 200.0;
+    return kUMMovieListCellHeight;
 }
 
 - (void)configureCellWithMovieObject:(UMMovieObject *)movie {

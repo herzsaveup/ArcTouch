@@ -8,6 +8,9 @@
 
 #import "UMRequestsManager.h"
 
+/*
+    Flag used to use local data in case the service is not responding (As for now it still fails)
+ */
 #define UMShouldUseLocalDataIfServiceIsDown 1
 
 #define UMUserCurrentLocale [[[NSLocale currentLocale] localeIdentifier] stringByReplacingOccurrencesOfString:@"_" withString:@"-"]
@@ -22,6 +25,10 @@ static NSString * const kUMGenresListRequestPath = @"/genre/movie/list";
 @implementation UMRequestsManager
 
 #pragma mark - Class Methods
+
+/*
+    If UMShouldUseLocalDataIfServiceIsDown flag is active, we use the local JSON file to have something to display in both cases
+ */
 
 + (void)getUpcomingMoviesListWithCompletionHandler:(void (^)(id responseObject, NSError *error))completionHandler {
     [UMRequestsManager sendGETRequestWithPath:kUMMoviesListRequestPath
@@ -52,6 +59,11 @@ static NSString * const kUMGenresListRequestPath = @"/genre/movie/list";
 }
 
 #pragma mark - General Methods
+
+/*
+    Declared a general method for this HTTP Method since they all have the save structure, just different
+    parameters configuration
+ */
 
 + (void)sendGETRequestWithPath:(NSString *)path
                     parameters:(NSDictionary *)parameters
@@ -85,6 +97,10 @@ static NSString * const kUMGenresListRequestPath = @"/genre/movie/list";
 }
 
 #pragma mark - Helpers
+
+/*
+    Helper method to parse parameters key/values and make them GET url parameters
+ */
 
 + (NSString *)parseParamsToString:(NSDictionary *)params {
     NSMutableString *stringParams = [[NSMutableString alloc] initWithString:@"&"];

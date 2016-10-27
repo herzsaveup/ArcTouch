@@ -20,6 +20,5 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "SVProgressHUD.h"
-#import "AFNetworking.h"
 
 #endif /* ArcTouch_PrefixHeader_pch */

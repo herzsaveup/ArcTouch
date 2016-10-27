@@ -17,6 +17,10 @@ static NSString * const kUMMovieOverviewKey = @"overview";
 
 @implementation UMMovieObject
 
+/*
+    Here we initialize all needed properties of the movie as well as some "computed" properties like the moviesGenresString
+    so it will all stay in one place to be used where needed
+ */
 - (instancetype)initWithMovieInfo:(NSDictionary *)movieInfo {
     self = [super init];
     if (self) {

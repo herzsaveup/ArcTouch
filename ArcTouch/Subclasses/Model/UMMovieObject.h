@@ -6,12 +6,19 @@
 //  Copyright © 2016 Symmetry Apps. All rights reserved.
 //
 
+/*
+    Movie object class. Easy to add/modify new/existing properties
+ */
+
 #import <Foundation/Foundation.h>
 
 @class UMMovieGenreObject;
 
 @interface UMMovieObject : NSObject
 
+/*
+    Only initialization that is useful for this class, to return a useful object
+ */
 - (instancetype)initWithMovieInfo:(NSDictionary *)movieInfo;
 
 @property (strong, nonatomic) NSString *movieName;
