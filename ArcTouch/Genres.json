@@ -1,0 +1,60 @@
+{
+  "genres": [
+    {
+      "id": 28,
+      "name": "Action"
+    },
+    {
+      "id": 18,
+      "name": "Comedy"
+    },
+    {
+      "id": 10402,
+      "name": "Drama"
+    },
+    {
+      "id": 35,
+      "name": "Thriller"
+    },
+    {
+      "id": 80,
+      "name": "Adventure"
+    },
+    {
+      "id": 53,
+      "name": "Independent"
+    },
+    {
+      "id": 27,
+      "name": "No-sense"
+    },
+             {
+             "id": 37,
+             "name": "Intense"
+             },
+    {
+      "id": 10752,
+      "name": "Sci-fi"
+    },
+    {
+      "id": 14,
+      "name": "Crazy"
+    },
+    {
+      "id": 14,
+      "name": "Crazy"
+    },
+    {
+      "id": 9648,
+      "name": "Endless"
+    },
+    {
+      "id": 878,
+      "name": "Morgan"
+    },
+    {
+      "id": 10749,
+      "name": "Real life"
+    }
+  ]
+}

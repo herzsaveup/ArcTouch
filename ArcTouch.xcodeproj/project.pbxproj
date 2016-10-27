@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FB425AC1DC1BF170025D511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425AB1DC1BF170025D511 /* main.m */; };
+		4FB425B71DC1BF170025D511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB425B61DC1BF170025D511 /* Assets.xcassets */; };
+		4FB425BA1DC1BF170025D511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB425B81DC1BF170025D511 /* LaunchScreen.storyboard */; };
+		4FB425CE1DC1C1F90025D511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425C31DC1C1F90025D511 /* AppDelegate.m */; };
+		4FB425D21DC1C2450025D511 /* UMMoviesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425D01DC1C2450025D511 /* UMMoviesListViewController.m */; };
+		4FB425D31DC1C2450025D511 /* UMMoviesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB425D11DC1C2450025D511 /* UMMoviesListViewController.xib */; };
+		4FB425D71DC1C2600025D511 /* UMGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425D61DC1C2600025D511 /* UMGeneralViewController.m */; };
+		4FB425DB1DC1C28A0025D511 /* UMMovieListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425D91DC1C28A0025D511 /* UMMovieListCell.m */; };
+		4FB425DC1DC1C28A0025D511 /* UMMovieListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB425DA1DC1C28A0025D511 /* UMMovieListCell.xib */; };
+		4FB425E01DC1C85D0025D511 /* UMMovieObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425DF1DC1C85D0025D511 /* UMMovieObject.m */; };
+		4FB425E31DC1C9CE0025D511 /* UMMovieGenreObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425E21DC1C9CE0025D511 /* UMMovieGenreObject.m */; };
+		4FB425E71DC1D1FB0025D511 /* TMDb.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FB425E61DC1D1FB0025D511 /* TMDb.json */; };
+		4FB425EE1DC1D3800025D511 /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425ED1DC1D3800025D511 /* UIView+Utilities.m */; };
+		4FB425F11DC1D41B0025D511 /* UIViewController+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425F01DC1D41B0025D511 /* UIViewController+Utilities.m */; };
+		4FB425F51DC23CAC0025D511 /* UMRequestsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425F41DC23CAC0025D511 /* UMRequestsManager.m */; };
+		4FB425F91DC24A350025D511 /* UMMovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425F71DC24A350025D511 /* UMMovieDetailViewController.m */; };
+		4FB425FA1DC24A350025D511 /* UMMovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB425F81DC24A350025D511 /* UMMovieDetailViewController.xib */; };
+		4FB425FC1DC2641A0025D511 /* Genres.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FB425FB1DC2641A0025D511 /* Genres.json */; };
+		4FB425FF1DC284880025D511 /* UMMovieGenresManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB425FE1DC284880025D511 /* UMMovieGenresManager.m */; };
+		C9A8D05D47C815562E8D8D44 /* libPods-ArcTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5854FB8C69B90CB656F419 /* libPods-ArcTouch.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FB425A71DC1BF170025D511 /* ArcTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB425AB1DC1BF170025D511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FB425B61DC1BF170025D511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FB425B91DC1BF170025D511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FB425BB1DC1BF170025D511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB425C21DC1C1F90025D511 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4FB425C31DC1C1F90025D511 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FB425CF1DC1C2450025D511 /* UMMoviesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMoviesListViewController.h; sourceTree = "<group>"; };
+		4FB425D01DC1C2450025D511 /* UMMoviesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMoviesListViewController.m; sourceTree = "<group>"; };
+		4FB425D11DC1C2450025D511 /* UMMoviesListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMMoviesListViewController.xib; sourceTree = "<group>"; };
+		4FB425D51DC1C2600025D511 /* UMGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMGeneralViewController.h; sourceTree = "<group>"; };
+		4FB425D61DC1C2600025D511 /* UMGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMGeneralViewController.m; sourceTree = "<group>"; };
+		4FB425D81DC1C28A0025D511 /* UMMovieListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMovieListCell.h; sourceTree = "<group>"; };
+		4FB425D91DC1C28A0025D511 /* UMMovieListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMovieListCell.m; sourceTree = "<group>"; };
+		4FB425DA1DC1C28A0025D511 /* UMMovieListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMMovieListCell.xib; sourceTree = "<group>"; };
+		4FB425DE1DC1C85D0025D511 /* UMMovieObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMovieObject.h; sourceTree = "<group>"; };
+		4FB425DF1DC1C85D0025D511 /* UMMovieObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMovieObject.m; sourceTree = "<group>"; };
+		4FB425E11DC1C9CE0025D511 /* UMMovieGenreObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMovieGenreObject.h; sourceTree = "<group>"; };
+		4FB425E21DC1C9CE0025D511 /* UMMovieGenreObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMovieGenreObject.m; sourceTree = "<group>"; };
+		4FB425E41DC1CB060025D511 /* ArcTouch-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ArcTouch-PrefixHeader.pch"; sourceTree = "<group>"; };
+		4FB425E51DC1CBAD0025D511 /* ArcTouchConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcTouchConstants.h; sourceTree = "<group>"; };
+		4FB425E61DC1D1FB0025D511 /* TMDb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TMDb.json; sourceTree = "<group>"; };
+		4FB425EC1DC1D3800025D511 /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utilities.h"; sourceTree = "<group>"; };
+		4FB425ED1DC1D3800025D511 /* UIView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utilities.m"; sourceTree = "<group>"; };
+		4FB425EF1DC1D41B0025D511 /* UIViewController+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utilities.h"; sourceTree = "<group>"; };
+		4FB425F01DC1D41B0025D511 /* UIViewController+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utilities.m"; sourceTree = "<group>"; };
+		4FB425F31DC23CAC0025D511 /* UMRequestsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMRequestsManager.h; sourceTree = "<group>"; };
+		4FB425F41DC23CAC0025D511 /* UMRequestsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMRequestsManager.m; sourceTree = "<group>"; };
+		4FB425F61DC24A350025D511 /* UMMovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMovieDetailViewController.h; sourceTree = "<group>"; };
+		4FB425F71DC24A350025D511 /* UMMovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMovieDetailViewController.m; sourceTree = "<group>"; };
+		4FB425F81DC24A350025D511 /* UMMovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMMovieDetailViewController.xib; sourceTree = "<group>"; };
+		4FB425FB1DC2641A0025D511 /* Genres.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Genres.json; sourceTree = "<group>"; };
+		4FB425FD1DC284880025D511 /* UMMovieGenresManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMMovieGenresManager.h; sourceTree = "<group>"; };
+		4FB425FE1DC284880025D511 /* UMMovieGenresManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMMovieGenresManager.m; sourceTree = "<group>"; };
+		6883DD29202BE4B75ED5108C /* Pods-ArcTouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcTouch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArcTouch/Pods-ArcTouch.debug.xcconfig"; sourceTree = "<group>"; };
+		AEB0B98C2DD7116BF701FDB3 /* Pods-ArcTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcTouch.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArcTouch/Pods-ArcTouch.release.xcconfig"; sourceTree = "<group>"; };
+		DD5854FB8C69B90CB656F419 /* libPods-ArcTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArcTouch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FB425A41DC1BF170025D511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9A8D05D47C815562E8D8D44 /* libPods-ArcTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FB4259E1DC1BF170025D511 = {
+			isa = PBXGroup;
+			children = (
+				4FB425A91DC1BF170025D511 /* ArcTouch */,
+				4FB425A81DC1BF170025D511 /* Products */,
+				745A92ED3C0DBA865C323933 /* Pods */,
+				B744E01C5FF79C08789E6A06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FB425A81DC1BF170025D511 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425A71DC1BF170025D511 /* ArcTouch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FB425A91DC1BF170025D511 /* ArcTouch */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425C11DC1C1F90025D511 /* App Delegate */,
+				4FB425C51DC1C1F90025D511 /* View Controllers */,
+				4FB425E81DC1D2300025D511 /* Categories */,
+				4FB425C41DC1C1F90025D511 /* Subclasses */,
+				4FB425B61DC1BF170025D511 /* Assets.xcassets */,
+				4FB425B81DC1BF170025D511 /* LaunchScreen.storyboard */,
+				4FB425BB1DC1BF170025D511 /* Info.plist */,
+				4FB425AA1DC1BF170025D511 /* Supporting Files */,
+			);
+			path = ArcTouch;
+			sourceTree = "<group>";
+		};
+		4FB425AA1DC1BF170025D511 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425FB1DC2641A0025D511 /* Genres.json */,
+				4FB425E61DC1D1FB0025D511 /* TMDb.json */,
+				4FB425AB1DC1BF170025D511 /* main.m */,
+				4FB425E41DC1CB060025D511 /* ArcTouch-PrefixHeader.pch */,
+				4FB425E51DC1CBAD0025D511 /* ArcTouchConstants.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FB425C11DC1C1F90025D511 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425C21DC1C1F90025D511 /* AppDelegate.h */,
+				4FB425C31DC1C1F90025D511 /* AppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		4FB425C41DC1C1F90025D511 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425F21DC23C9F0025D511 /* Requests */,
+				4FB425DD1DC1C84C0025D511 /* Model */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		4FB425C51DC1C1F90025D511 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425D41DC1C2560025D511 /* General View Controller */,
+				4FB425CA1DC1C1F90025D511 /* Movies List */,
+				4FB425C61DC1C1F90025D511 /* Movie Detail */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4FB425C61DC1C1F90025D511 /* Movie Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425C81DC1C1F90025D511 /* Controller */,
+			);
+			path = "Movie Detail";
+			sourceTree = "<group>";
+		};
+		4FB425C81DC1C1F90025D511 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425F61DC24A350025D511 /* UMMovieDetailViewController.h */,
+				4FB425F71DC24A350025D511 /* UMMovieDetailViewController.m */,
+				4FB425F81DC24A350025D511 /* UMMovieDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FB425CA1DC1C1F90025D511 /* Movies List */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425CB1DC1C1F90025D511 /* Cells */,
+				4FB425CC1DC1C1F90025D511 /* Controller */,
+			);
+			path = "Movies List";
+			sourceTree = "<group>";
+		};
+		4FB425CB1DC1C1F90025D511 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425D81DC1C28A0025D511 /* UMMovieListCell.h */,
+				4FB425D91DC1C28A0025D511 /* UMMovieListCell.m */,
+				4FB425DA1DC1C28A0025D511 /* UMMovieListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4FB425CC1DC1C1F90025D511 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425CF1DC1C2450025D511 /* UMMoviesListViewController.h */,
+				4FB425D01DC1C2450025D511 /* UMMoviesListViewController.m */,
+				4FB425D11DC1C2450025D511 /* UMMoviesListViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FB425D41DC1C2560025D511 /* General View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425D51DC1C2600025D511 /* UMGeneralViewController.h */,
+				4FB425D61DC1C2600025D511 /* UMGeneralViewController.m */,
+			);
+			path = "General View Controller";
+			sourceTree = "<group>";
+		};
+		4FB425DD1DC1C84C0025D511 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425DE1DC1C85D0025D511 /* UMMovieObject.h */,
+				4FB425DF1DC1C85D0025D511 /* UMMovieObject.m */,
+				4FB425E11DC1C9CE0025D511 /* UMMovieGenreObject.h */,
+				4FB425E21DC1C9CE0025D511 /* UMMovieGenreObject.m */,
+				4FB425FD1DC284880025D511 /* UMMovieGenresManager.h */,
+				4FB425FE1DC284880025D511 /* UMMovieGenresManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FB425E81DC1D2300025D511 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425EF1DC1D41B0025D511 /* UIViewController+Utilities.h */,
+				4FB425F01DC1D41B0025D511 /* UIViewController+Utilities.m */,
+				4FB425EC1DC1D3800025D511 /* UIView+Utilities.h */,
+				4FB425ED1DC1D3800025D511 /* UIView+Utilities.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4FB425F21DC23C9F0025D511 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				4FB425F31DC23CAC0025D511 /* UMRequestsManager.h */,
+				4FB425F41DC23CAC0025D511 /* UMRequestsManager.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		745A92ED3C0DBA865C323933 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6883DD29202BE4B75ED5108C /* Pods-ArcTouch.debug.xcconfig */,
+				AEB0B98C2DD7116BF701FDB3 /* Pods-ArcTouch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B744E01C5FF79C08789E6A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD5854FB8C69B90CB656F419 /* libPods-ArcTouch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FB425A61DC1BF170025D511 /* ArcTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB425BE1DC1BF170025D511 /* Build configuration list for PBXNativeTarget "ArcTouch" */;
+			buildPhases = (
+				8D5FAE55F86493F0A80764DF /* Check Pods Manifest.lock */,
+				4FB425A31DC1BF170025D511 /* Sources */,
+				4FB425A41DC1BF170025D511 /* Frameworks */,
+				4FB425A51DC1BF170025D511 /* Resources */,
+				BA99FBC1BE2D008040FFDC26 /* Embed Pods Frameworks */,
+				B5CC8F5052D610824A46F05E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArcTouch;
+			productName = ArcTouch;
+			productReference = 4FB425A71DC1BF170025D511 /* ArcTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FB4259F1DC1BF170025D511 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Symmetry Apps";
+				TargetAttributes = {
+					4FB425A61DC1BF170025D511 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NH5LP6A63M;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4FB425A21DC1BF170025D511 /* Build configuration list for PBXProject "ArcTouch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FB4259E1DC1BF170025D511;
+			productRefGroup = 4FB425A81DC1BF170025D511 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FB425A61DC1BF170025D511 /* ArcTouch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FB425A51DC1BF170025D511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB425E71DC1D1FB0025D511 /* TMDb.json in Resources */,
+				4FB425BA1DC1BF170025D511 /* LaunchScreen.storyboard in Resources */,
+				4FB425D31DC1C2450025D511 /* UMMoviesListViewController.xib in Resources */,
+				4FB425DC1DC1C28A0025D511 /* UMMovieListCell.xib in Resources */,
+				4FB425FA1DC24A350025D511 /* UMMovieDetailViewController.xib in Resources */,
+				4FB425B71DC1BF170025D511 /* Assets.xcassets in Resources */,
+				4FB425FC1DC2641A0025D511 /* Genres.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D5FAE55F86493F0A80764DF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5CC8F5052D610824A46F05E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArcTouch/Pods-ArcTouch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA99FBC1BE2D008040FFDC26 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArcTouch/Pods-ArcTouch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FB425A31DC1BF170025D511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB425DB1DC1C28A0025D511 /* UMMovieListCell.m in Sources */,
+				4FB425F11DC1D41B0025D511 /* UIViewController+Utilities.m in Sources */,
+				4FB425E31DC1C9CE0025D511 /* UMMovieGenreObject.m in Sources */,
+				4FB425E01DC1C85D0025D511 /* UMMovieObject.m in Sources */,
+				4FB425CE1DC1C1F90025D511 /* AppDelegate.m in Sources */,
+				4FB425AC1DC1BF170025D511 /* main.m in Sources */,
+				4FB425FF1DC284880025D511 /* UMMovieGenresManager.m in Sources */,
+				4FB425EE1DC1D3800025D511 /* UIView+Utilities.m in Sources */,
+				4FB425F91DC24A350025D511 /* UMMovieDetailViewController.m in Sources */,
+				4FB425D21DC1C2450025D511 /* UMMoviesListViewController.m in Sources */,
+				4FB425D71DC1C2600025D511 /* UMGeneralViewController.m in Sources */,
+				4FB425F51DC23CAC0025D511 /* UMRequestsManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FB425B81DC1BF170025D511 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FB425B91DC1BF170025D511 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FB425BC1DC1BF170025D511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4FB425BD1DC1BF170025D511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FB425BF1DC1BF170025D511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6883DD29202BE4B75ED5108C /* Pods-ArcTouch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NH5LP6A63M;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ArcTouch/ArcTouch-PrefixHeader.pch";
+				INFOPLIST_FILE = ArcTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.symmetryapps.ArcTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4FB425C01DC1BF170025D511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB0B98C2DD7116BF701FDB3 /* Pods-ArcTouch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NH5LP6A63M;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ArcTouch/ArcTouch-PrefixHeader.pch";
+				INFOPLIST_FILE = ArcTouch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.symmetryapps.ArcTouch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FB425A21DC1BF170025D511 /* Build configuration list for PBXProject "ArcTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB425BC1DC1BF170025D511 /* Debug */,
+				4FB425BD1DC1BF170025D511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB425BE1DC1BF170025D511 /* Build configuration list for PBXNativeTarget "ArcTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB425BF1DC1BF170025D511 /* Debug */,
+				4FB425C01DC1BF170025D511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FB4259F1DC1BF170025D511 /* Project object */;
+}

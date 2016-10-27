@@ -1,0 +1,25 @@
+//
+//  ArcTouch-PrefixHeader.pch
+//  ArcTouch
+//
+//  Created by Herzon Rodriguez on 10/27/16.
+//  Copyright © 2016 Symmetry Apps. All rights reserved.
+//
+
+#ifndef ArcTouch_PrefixHeader_pch
+#define ArcTouch_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Foundation/Foundation.h>
+
+#import "ArcTouchConstants.h"
+#import "UIView+Utilities.h"
+#import "UIViewController+Utilities.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "SVProgressHUD.h"
+#import "AFNetworking.h"
+
+#endif /* ArcTouch_PrefixHeader_pch */
